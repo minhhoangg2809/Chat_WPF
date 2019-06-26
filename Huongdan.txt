@@ -1,0 +1,6 @@
+download
+1> rebuild solution
+2> run ChattingServer/bin/Debug/ChattingServer.exe
+3> run IChat/bin/Debug/IChat.exe
+
+src: https://www.youtube.com/watch?v=Hv6-J7otz10

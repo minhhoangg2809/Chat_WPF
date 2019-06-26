@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IChat", "IChat\IChat.csproj", "{E553F3DC-A42B-4F0D-B00C-EB670C1D28D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingServer", "ChattingServer\ChattingServer.csproj", "{3A333481-726A-4A56-B77E-D7E6CF4ECDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingInterfaces", "ChattingInterfaces\ChattingInterfaces.csproj", "{18A9462F-7C61-45AD-ABBE-923528FF3514}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E553F3DC-A42B-4F0D-B00C-EB670C1D28D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E553F3DC-A42B-4F0D-B00C-EB670C1D28D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E553F3DC-A42B-4F0D-B00C-EB670C1D28D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E553F3DC-A42B-4F0D-B00C-EB670C1D28D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A333481-726A-4A56-B77E-D7E6CF4ECDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A333481-726A-4A56-B77E-D7E6CF4ECDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A333481-726A-4A56-B77E-D7E6CF4ECDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A333481-726A-4A56-B77E-D7E6CF4ECDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A9462F-7C61-45AD-ABBE-923528FF3514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A9462F-7C61-45AD-ABBE-923528FF3514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A9462F-7C61-45AD-ABBE-923528FF3514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A9462F-7C61-45AD-ABBE-923528FF3514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

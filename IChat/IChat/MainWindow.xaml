@@ -1,0 +1,115 @@
+﻿<Window x:Class="IChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IChat"
+        xmlns:uc="clr-namespace:IChat.User_Control"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="600" Width="600" 
+        MaxHeight="600" MaxWidth="600"
+        WindowStartupLocation="CenterScreen" 
+        FontFamily="Dosis" WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderBrush="Black" BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <uc:ControlBar Height="30"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="white">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="270"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" Background="#FFE4E4E4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                
+                <StackPanel Grid.Row="0" Orientation="Horizontal"  Background="#FFE4E4E4" Height="100" VerticalAlignment="Top">
+                    <Border Width="10" Height="10" HorizontalAlignment="Right" Margin="15" Background="Green" CornerRadius="15" VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding Path=Text,ElementName=tb_Name}" FontSize="28" VerticalAlignment="Center"/>
+
+                    <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Margin="15 15 10 15"  Background="#FF70ACD9">
+                        <materialDesign:PackIcon Kind="User" Foreground="White"/>
+                    </Button>
+                </StackPanel>
+                
+                <Separator Grid.Row="1" Background="Black" Height="1"/>
+
+
+                <ScrollViewer x:Name="sc_chatbox" Grid.Row="2" VerticalAlignment="Stretch">
+                    <StackPanel x:Name="Chat_Box"  VerticalAlignment="Stretch">
+                        <!--Chat box in here-->
+                    </StackPanel>
+                </ScrollViewer>
+
+
+                <Border Grid.Row="3" Background="#FFAFE6B2" VerticalAlignment="Bottom">
+                    <Grid Margin="0 10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+
+                        <materialDesign:Chip Margin="10 0 0 0" Grid.Column="0" Background="White" Width="230">
+                            <TextBox x:Name="txbMessage" 
+                             Background="White" 
+                             Foreground="Black"
+                             BorderBrush="{x:Null}"
+                             BorderThickness="0"
+                             FontSize="15"
+                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"/>
+                        </materialDesign:Chip>
+
+                        <Button x:Name="btn_Send" Grid.Column="1" IsDefault="True" 
+                                VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                            <materialDesign:PackIcon Kind="Send"/>
+                        </Button>
+
+                    </Grid>
+                </Border>
+
+
+            </Grid>
+
+            <StackPanel Grid.Column="0" Background="{StaticResource PrimaryHueDarkBrush}">
+                <StackPanel Orientation="Horizontal" Background="White">
+                    <Image Width="210" Height="80" Source="Assets/logo.png"/>
+                    <Button x:Name="btn_Update" ToolTip="Update User List" Style="{StaticResource MaterialDesignFlatButton}">
+                        <materialDesign:PackIcon Kind="PlusCircle" Width="24" Height="24"/>
+                    </Button>
+                </StackPanel>
+
+                <TextBox x:Name="tb_Name" Width="200" Margin="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                         materialDesign:HintAssist.Hint="Your name" Foreground="White"/>
+                <Button x:Name="btn_Login" Width="200" Margin="5" Background="#FF70ACD9" Content="LOGIN" Foreground="White"/>
+                <Button x:Name="btn_Logout" Width="200" Margin="5" Background="OrangeRed" Content="LOGOUT" Foreground="White"/>
+                <TextBlock Height="30"/>
+                <Separator Height="2" Background="White" VerticalAlignment="Stretch"/>
+                <Grid>
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+                        <StackPanel x:Name="list_User" Orientation="Vertical">
+                            <!--list friend-->
+                        </StackPanel>
+                    </ScrollViewer>
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

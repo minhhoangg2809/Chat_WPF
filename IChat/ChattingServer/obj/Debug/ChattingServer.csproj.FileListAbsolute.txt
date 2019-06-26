@@ -1,0 +1,8 @@
+E:\C#\App\IChat\ChattingServer\bin\Debug\ChattingServer.exe.config
+E:\C#\App\IChat\ChattingServer\bin\Debug\ChattingServer.exe
+E:\C#\App\IChat\ChattingServer\bin\Debug\ChattingServer.pdb
+E:\C#\App\IChat\ChattingServer\bin\Debug\ChattingInterfaces.dll
+E:\C#\App\IChat\ChattingServer\bin\Debug\ChattingInterfaces.pdb
+E:\C#\App\IChat\ChattingServer\obj\Debug\ChattingServer.csprojResolveAssemblyReference.cache
+E:\C#\App\IChat\ChattingServer\obj\Debug\ChattingServer.exe
+E:\C#\App\IChat\ChattingServer\obj\Debug\ChattingServer.pdb

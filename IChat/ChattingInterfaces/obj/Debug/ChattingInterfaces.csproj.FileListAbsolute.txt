@@ -1,0 +1,4 @@
+E:\C#\App\IChat\ChattingInterfaces\bin\Debug\ChattingInterfaces.dll
+E:\C#\App\IChat\ChattingInterfaces\bin\Debug\ChattingInterfaces.pdb
+E:\C#\App\IChat\ChattingInterfaces\obj\Debug\ChattingInterfaces.dll
+E:\C#\App\IChat\ChattingInterfaces\obj\Debug\ChattingInterfaces.pdb
