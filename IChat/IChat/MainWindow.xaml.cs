@@ -43,6 +43,19 @@ namespace IChat
 
         }
 
+        public static string RandomInt(int size)
+        {
+            string sb = "";
+            Random rand = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                sb += (rand.Next(0, 9)).ToString();
+            }
+
+            return sb;
+
+        }
+
         void btn_Update_Click(object sender, RoutedEventArgs e)
         {
             if (tb_Name.Text != string.Empty)
@@ -94,6 +107,28 @@ namespace IChat
 
                     LoadUserList(Server.GetCurrrentUserList());
                 }
+            }
+
+            else
+            {
+                string username = "Guest_" + RandomInt(5);
+
+                int i = Server.Login(username);
+
+                if (i == 1)
+                {
+                    MessageBox.Show("You are already login !!!");
+                }
+                else if (i == 0)
+                {
+                    MessageBox.Show("Welcom !!!");
+                    tb_Name.IsEnabled = false;
+                    btn_Login.IsEnabled = false;
+
+                    tb_Name.Text = username;
+
+                    LoadUserList(Server.GetCurrrentUserList());
+                } 
             }
 
         }
